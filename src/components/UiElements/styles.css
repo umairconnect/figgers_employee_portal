@@ -1,0 +1,59 @@
+﻿.custom-label{
+    font-family: 'Lato' !important;
+    font-style: normal;
+    font-weight: 800 !important;
+    font-size: 12px !important;
+    align-items: center;
+    color: #4b4b4b;
+    display: flex;
+    margin: 5px 5px 5px 0px !important
+}
+.custom-button{
+    width: unset !important;
+    background-color: #0049A3 !important;
+    border: 1px solid #0686D8 !important;
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
+    height: auto;
+    min-width: 160px !important;
+    font-family: 'Lato' !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    text-transform: capitalize !important;
+    font-size: 17px !important;
+    letter-spacing: 1.4px !important;
+    color: white !important;
+}
+.custom-button.Mui-disabled {
+    background-color: #d2d2d2 !important;
+    border-color: #ff000000 !important;
+    color: #636363 !important;
+}
+
+.custom-button.Mui-disabled .MuiCircularProgress-svg {
+     color: #ff000000 !important;
+}
+.custom-button:hover{
+    background-color:  #085dc7 !important;
+}
+.custom-button .span{
+    margin-bottom: 4px !important;
+}
+.custom-btn{
+    border: 1px solid #0049A3 !important;
+    border-radius: 10px !important;
+    padding: 10px 20px !important;
+    height: auto;
+    min-width: 160px !important;
+    font-family: 'Lato' !important;
+    font-style: normal;
+    font-weight: 700 !important;
+    text-transform: capitalize !important;
+    font-size: 14px !important;
+    letter-spacing: 1.4px !important;
+    color: #0049A3 !important;
+}
+.next-btn{
+    color: white !important;
+    background-color: #0049A3 !important;
+}

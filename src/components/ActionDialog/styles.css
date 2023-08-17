@@ -1,0 +1,55 @@
+﻿.action-dialog-custom-modal{
+    overflow-y: initial !important;
+}
+.action-dialog-custom-modal .ant-row{
+    display: flex;
+}
+.action-dialog-custom-modal .ant-modal-header{
+    display: none;
+}
+/* .action-dialog-custom-modal .ant-modal-body{
+    padding: 16px 0px;
+    height: 60vh;
+} */
+.action-dialog-footerButton{
+    text-align: center;
+}
+.new-call-custom-modal .ant-modal-footer{
+    padding: 10px 16px;
+    text-align: center;
+    background: 0 0;
+    border-top: 1px solid #f0f0f0;
+}
+.warning-icon{
+    color:#EB5757;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+.success-icon{
+    color: #6FCF97;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+.update-icon{
+    color: #BF710F;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+.confirm-icon {
+    /* color:#BDBDBD; */
+    color: #f9a843;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+}
+.dialog-message{
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 10px;
+}

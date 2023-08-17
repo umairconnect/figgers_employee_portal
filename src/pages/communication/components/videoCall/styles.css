@@ -1,0 +1,117 @@
+﻿.new-call-custom-modal.video-call-modal{
+    max-width: 587px;
+    min-width: 320px;
+}
+.new-call-custom-modal.video-call-modal .ant-modal-header{
+    padding: 16px 27px;
+    border: none;
+}
+.new-call-custom-modal.video-call-modal .ant-modal-body{
+    padding: 5px 27px 25px;
+}
+.v-call-user-header{
+    background-color: #F0F0F0;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px 15px 30px;
+    max-width: 100%;
+    margin: 20px 10px;
+    border-radius: 18px;
+}
+.v-call-user-box{
+    display: flex;
+    flex: 1;
+   
+    max-width: 100%;
+    /* border-bottom: 1px solid #a8b7bf;
+    padding-bottom: 10px; */
+    align-items: center;
+}
+.v-call-user-avatar{
+    margin: 0 30px 0 0;
+    height: 106px;
+    width: 106px;
+    border-radius: 100px;
+    /* border: 1px solid #a8b7bf; */
+}
+.v-call-user-avatar img{
+    height: 106px;
+    width: 106px;
+    border-radius: 100px;
+    border: 3px solid #0049A3;
+}
+.v-call-user-content{
+    flex: 1 0;
+    width: 0;
+    color:#fff;
+    position: relative;
+    top: -7px;
+    
+}
+.v-call-user-content span{
+    display: block;
+}
+    .v-call-user-content .v-call-user-title{
+    font-weight: 600;
+    font-size: 15px;
+    color:#3C4549;
+}
+.v-call-user-content .v-call-user-area{
+    display: flex;
+    align-items: center;
+}
+.v-call-user-content .v-call-user-dob{
+    font-weight: 400;
+    font-size: 14px;
+    margin: 3px 10px 0 0;
+    color:#3C4549;
+}
+.v-call-user-content .v-call-user-dob img{
+    width: 15px;
+    height: 15px;
+}
+
+.v-call-user-content .v-call-user-email{
+    font-weight: 400;
+    font-size: 13px;
+}
+.v-call-user-content .scheduled-date-time-text{
+    font-weight: 900;
+    font-size: 16px;
+    color:#3C4549;
+}
+.v-call-user-content .scheduled-date-time{
+    font-weight: 400;
+    font-size: 14px;
+    color:#3C4549;
+    margin-left: 5px;
+}
+.v-call-user-content .scheduled-date-time span{
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 10px;
+}
+.video-call-modal .footer-content{
+    color:#838383;
+    font-size: 12px;
+    padding:20px 10px 0px 5px;
+}
+.new-call-custom-modal .ant-modal-footer{
+    padding: 0px 16px 25px 16px;
+    text-align: center;
+    background: 0 0;
+    border:none;
+    /* border-top: 1px solid #f0f0f0; */
+  }
+  .kaiser-logo{
+      position: absolute;
+      top: 14px;
+        right: 0px;
+        width: 200px;
+  }
+  .video-call-row{
+      padding-left: 4px;
+      padding-right: 4px;
+  }

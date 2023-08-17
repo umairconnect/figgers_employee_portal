@@ -1,0 +1,40 @@
+.Recent10ReadingsAverageLineChart{
+  width: 100%;
+  padding: 10px 0px;
+}
+.latest-reading .ant-progress-circle .ant-progress-text{
+  top: 33%;
+  font-size: 55px;
+  color:#1976D2;
+}
+.latest-reading .ant-progress-circle.low .ant-progress-text{
+  color:#1976D2;
+  }
+  .latest-reading .ant-progress-circle.normal .ant-progress-text{
+    color: #1CADBF;
+    }
+.latest-reading .ant-progress-circle.high .ant-progress-text{
+color: #FFB22B;
+}
+.latest-reading .ant-progress-circle.very-high .ant-progress-text{
+  color: #EF5350;
+  }
+.progress-text{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.progress-text-mg{
+  color: #4D4D4D;
+  opacity: 0.5;
+  font-weight: 500;
+  font-size: 15px;
+  display: block;
+}
+.progress-text-low{
+  color: #1976D2;
+  font-weight: 400;
+  font-size: 20px;
+}

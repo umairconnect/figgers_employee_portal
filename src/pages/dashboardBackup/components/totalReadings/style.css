@@ -1,0 +1,21 @@
+.Recent10ReadingsAverageLineChart{
+  width: 100%;
+  padding: 0px 0px;
+  position: relative;
+}
+.total-number{
+  position: absolute;
+  top: 43.5%;
+  left: 45%;
+  right: 50%;
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 100px;
+  text-align: center;
+  color: #4D4D4D;
+  font-weight: 800;
+  padding: 6px 0 0;
+  line-height: 9px;
+  font-size: 7px;
+}

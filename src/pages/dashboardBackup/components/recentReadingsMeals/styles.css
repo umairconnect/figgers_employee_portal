@@ -1,0 +1,49 @@
+﻿.meal-box{
+    float: left;
+    text-align: center;
+    margin: 12px 0;
+    width: 100%;
+  }
+  .meal-box .ant-radio-group.ant-radio-group-solid{
+   border-radius: 50px;
+   border: 1px solid #E5E5E5;
+  }
+  .meal-box .ant-radio-group.ant-radio-group-solid label{
+    min-width: 133px;
+    border-radius: 50px;
+    border: none;
+    color:#000000;
+  }
+  .meal-box .ant-radio-group.ant-radio-group-solid label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked{
+    color:#fff;
+  }
+  .meal-box .ant-radio-button-wrapper:not(:first-child)::before{
+    display: none;
+  }
+  .meal-list{
+    border: 1px solid #E5E5E5;
+      min-height: 40px;
+      color: #595959;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 38px;
+      margin-bottom: 6px;
+  }
+  .meal-list .anticon-calendar , .meal-list .anticon-clock-circle{
+    color: #1976D2;
+      font-size: 16px;
+      margin: 0 6px -0px 10px;
+      display: inline-block;
+  
+  }
+  .meal-list .meal-rate{
+  color:#1976D2;
+  font-size: 20px;
+  }
+  .meal-list .meal-rate.high{
+    color: #FFAD31;
+  }
+  .meal-list .meal-rate span{
+    font-size: 12px;
+    padding-left: 5px;
+  }

@@ -1,0 +1,168 @@
+import React from 'react';
+import clsx from 'clsx';
+import { makeStyles } from '@material-ui/core/styles';
+import {
+    Route,
+    Switch,
+    withRouter,
+} from "react-router-dom";
+import {
+    Grid, Drawer,
+    CssBaseline,
+    Box, AppBar,
+    Toolbar, List,
+    Typography, Divider,
+    IconButton, Badge,
+    Container, Paper,
+    Link
+} from "@material-ui/core"
+import Dashboard from '../pages/dashboard/dashboard';
+
+
+import MenuIcon from '@material-ui/icons/Menu';
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import MessagesIcon from '../../assets/img/icons/Messages.svg';
+import DashboardIcon from '@material-ui/icons/Dashboard';
+import Logo from '../../assets/img/logo.svg';
+import OrderTrackingIcon from '../../assets/img/icons/orderTracking.svg';
+import BackendIcon from '../../assets/img/icons/backend.svg';
+import FiggersUHP from '../../assets/img/icons/figgersUHP.svg';
+import AddressBook from '../../assets/img/icons/addressbook.svg';
+import LineManagement from '../../assets/img/icons/lineManagement.svg';
+import ShopIcon from '../../assets/img/icons/store-Bold.svg';
+import Invention from '../../assets/img/icons/Invention.svg';
+import Reviews from '../../assets/img/icons/Reviews.svg';
+import Notification from '../../assets/img/icons/Notification.svg';
+import ProfileImage from '../../assets/img/profileImage.png';
+import UserBold from '../../assets/img/icons/user-Bold.svg';
+import commentsIcons from '../../assets/img/icons/comments-Bold.svg';
+import questionCircle from '../../assets/img/icons/question-circle-Bold.svg';
+import mobileIcon from '../../assets/img/icons/mobile-Bold.svg';
+import folderBold from '../../assets/img/icons/folderBold.svg'
+import LogoSm from '../../assets/img/logo-sm.svg';
+import SettingsIcon from '../../assets/img/icons/setting.svg';
+
+
+import WirelessService from '../pages/wirelessService/WirelessService';
+
+
+import useStyles from "./styles";
+
+
+
+
+export default function Layout() {
+
+    const classes = useStyles();
+    const [open, setOpen] = React.useState(true);
+    const handleDrawerOpen = () => {
+        setOpen(true);
+    };
+    const handleDrawerClose = () => {
+        setOpen(false);
+    };
+    const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+
+    return (
+        <div className={classes.root}>
+
+            <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
+                <Toolbar className={classes.toolbar}>
+                    {open ? <div className={classes.toolbarIcon}>
+                        <IconButton
+                            edge="start"
+                            color="inherit"
+                            aria-label="open drawer"
+                            onClick={handleDrawerClose}
+                            className={classes.menuButton}
+                        >
+                            <MenuIcon />
+                        </IconButton>
+                    </div> : <IconButton
+                        edge="start"
+                        color="inherit"
+                        aria-label="open drawer"
+                        onClick={handleDrawerOpen}
+                        className={classes.menuButton}
+                    >
+                        <MenuIcon />
+                    </IconButton>
+                    }
+
+                    <div className={classes.rightContent}>
+                        <IconButton color="inherit">
+                            <Badge badgeContent={4} color="secondary">
+                                <img src={MessagesIcon} />
+                            </Badge>
+                        </IconButton>
+
+                        <IconButton color="inherit">
+                            <Badge badgeContent={4} color="secondary">
+                                <img src={Notification} />
+                            </Badge>
+                        </IconButton>
+
+
+                        <IconButton color="inherit">
+                            <img src={SettingsIcon} />
+                            
+                        </IconButton>
+
+                        <div className={classes.profileDropper}>
+                            <div className="user-profile" style={{ backgroundImage: 'URL(' + ProfileImage + ')' }}></div>
+                            <h4>Brian Arnold</h4>
+                            <ExpandMoreIcon />
+                        </div>
+
+                    </div>
+
+                </Toolbar>
+            </AppBar>
+
+
+            <Drawer
+                variant="permanent"
+                classes={{
+                    paper: clsx(classes.drawerPaper, !open && classes.drawerPaperClose),
+                }}
+                open={open}
+            >
+                <div className={open? classes.logo: classes.logoSm}>
+                    {open ?
+                        <img src={Logo} /> : <img src={LogoSm} />
+                    }
+
+                </div>
+
+                <div className={classes.menuList}>
+                    <Link className={classes.menuListActive} to=""><DashboardIcon /> <span className={classes.MenuLabel}> Dashboard </span></Link>
+                    <Link to=""><img src={OrderTrackingIcon} /> <span className={classes.MenuLabel}> Order and Tracking </span></Link>
+                    <Link to=""><img src={BackendIcon} /> <span className={classes.MenuLabel}>Backend</span></Link>
+                    <Link to=""><img src={FiggersUHP} /> <span className={classes.MenuLabel}>Figgers UHP</span></Link>
+                    <Link to=""><img src={AddressBook} /> <span className={classes.MenuLabel}>Address Book</span></Link>
+                    <Link to=""><img src={LineManagement} /> <span className={classes.MenuLabel}>Line Management</span></Link>
+                    <Link to=""><img src={ShopIcon} /> <span className={classes.MenuLabel}>Shop</span></Link>
+                    <Link to=""><img src={Invention} /> <span className={classes.MenuLabel}>Inventions</span></Link>
+                    <Link to=""><img src={Reviews} /> <span className={classes.MenuLabel}>Reviews</span></Link>
+                    <Link to=""><img src={UserBold} /> <span className={classes.MenuLabel}>Subscribers</span></Link>
+                    <Link to=""><img src={commentsIcons} /> <span className={classes.MenuLabel}>Communication</span></Link>
+                    <Link to=""><img src={questionCircle} /> <span className={classes.MenuLabel}>Inquires</span></Link>
+                    <Link to=""><img src={mobileIcon} /> <span className={classes.MenuLabel}>Damage and Repairs</span></Link>
+                    <Link to=""><img src={folderBold} /> <span className={classes.MenuLabel}>Office</span></Link>
+                </div>
+
+            </Drawer>
+
+
+            <main className="theme-container">
+				<Switch>
+                    <Route path="/app/wireless-service" component={WirelessService} />
+                    <Route path="/app/dashboard" component={Dashboard} /> 
+                </Switch>
+             
+            </main>
+
+        </div>
+    );
+}

@@ -1,0 +1,110 @@
+﻿.custom-grid{
+    margin-top: 20px;
+}
+.custom-grid .ant-table-wrapper{
+    margin: 5px 20px 10px;
+    background: #FFFFFF;
+    /* border: 1px solid #E5E5E5; */
+    box-sizing: border-box;
+}
+.custom-grid .ant-table-title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    /* line-height: 132%; */
+    display: flex;
+    align-items: center;
+    color: #4D4D4D;
+    padding: 8px;
+}
+
+.custom-grid .ant-table-thead > tr > th{
+    font-style: normal;
+    font-weight: 500;
+    color: #244F96;
+    border-bottom: 2px solid #244F96;
+    background: transparent !important;
+}
+.custom-grid  .ant-table-thead > tr > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before{
+    width: 0px;
+}
+.ant-table-pagination.ant-pagination{
+    margin: 16px 16px 16px 0px;    
+}
+/* .custom-grid .ant-table{ */
+    .ant-table{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #4D4D4D;
+    border: 1px solid #E5E5E5;
+}
+.custom-grid .ant-table-column-sorters .ant-table-column-title{
+    position: absolute;
+    z-index: 1;
+    flex: 1 1;
+    float: right;
+    margin-left: 15px
+}
+.custom-grid .ant-table-column-sorters .ant-table-column-sorter{
+    color: #bfbfbf;
+    font-size: 0;
+    transition: color 0.3s;
+    /* padding-left: -0px; */
+    margin-top: 3px;
+    float: left;
+}
+.custom-grid .ant-table-thead  th.ant-table-column-has-sorters:hover{
+    background-color: #FFFFFF;
+}
+.custom-grid .ant-table-thead  th.ant-table-column-has-sorters{
+    background-color: #FFFFFF;
+}
+/* .ant-table-thead  .ant-tooltip-open:hover{
+    background-color: #FFFFFF;
+    content: none !important;
+} */
+/* .ant-table-thead > tr > th.ant-table-column-sort{
+background-color: #FFFFFF;
+} */
+/* .ant-table-thead > tr > th.ant-table-column-sort:hover{
+    background-color: #FFFFFF;
+} */
+.custom-grid td.ant-table-column-sort{
+    background-color: #FFFFFF;
+}
+.edit-icon{
+ color:#1976D2;  
+}
+.delete-icon{
+    color: #EF5350;
+}
+.grid-search-col{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    /* margin-bottom: -5px; */
+    /* flex: 0 0 35%; */
+}
+.grid-add-new-button{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: #1976D2;
+    background-color: transparent;
+    border: none;
+    margin: 7px;
+    background: transparent;
+    text-decoration: none;
+    padding: 0px;
+}
+.grid-add-new-button:hover{
+    color: #1976D2;
+    background-color: transparent;
+}
+.grid-add-new-button::selection{
+    color: #1976D2;
+    background-color: transparent;
+    background: transparent;
+}
+

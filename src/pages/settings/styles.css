@@ -1,0 +1,124 @@
+﻿.settings-main{
+    width: 100%;
+    padding:30px 30px 0px;
+}
+.settings-title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    /* line-height: 25px; */
+    color: #1976D2;
+}
+.settings-divider{
+    margin: 5px 0px 12px 0px
+}
+.settings-custom-form{
+    width: 100%;
+}
+.settings-subtitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #1976D2;
+    margin: 10px 0px;
+}
+.div-margin-left{
+    margin-left: 10px;
+}
+.unit{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;    
+    color: #4D4D4D; 
+    position: absolute;
+    display: block;
+    top: 37px;
+    right: 6px;
+    opacity: 0.7;
+    padding-left: 5px;
+    width: 45px;
+}
+.settings-meal-time-label{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #324370;
+}
+.settings-meal-time-label2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #4D4D4D;
+}
+.settings-meal-time-data-area-subtitle{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #324370;
+}
+.settings-meal-time-data-area{
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 80%;
+}
+.settings-meal-time-data-row{
+    min-width: 100%;
+    width: 100%;
+}
+.settings-meal-time-data-icon{
+    width: 17%;
+    min-width: 17%;
+    margin: 5px;
+}
+.settings-meal-time-data-text{
+    width: 40%;
+    min-width: 40%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #324370;
+}
+.settings-meal-time-data-text2{
+    width: 40%;
+    min-width: 40%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #324370;
+}
+.settings-title2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    color: #1976D2;
+    margin-top: 10px;
+}
+
+.settings-meal-time .ant-radio-group.ant-radio-group-solid{
+border-radius: 50px;
+border: 1px solid #E5E5E5;
+}
+.settings-meal-time .ant-radio-group.ant-radio-group-solid label{
+    min-width: 133px;
+    border-radius: 50px;
+    border: none;
+    color:#000000;
+}
+.settings-meal-time .ant-radio-group.ant-radio-group-solid label.ant-radio-button-wrapper.ant-radio-button-wrapper-checked{
+    color:#fff;
+}
+.settings-meal-time .ant-radio-button-wrapper:not(:first-child)::before{
+    display: none;
+}
+
+.settings-submit-btn{
+justify-content: flex-end;
+}
+.settings-meal-time .ant-radio-group.ant-radio-group-solid{
+    border-radius: 50px;
+}
+.settings-meal-time{
+    text-align: center;
+}
